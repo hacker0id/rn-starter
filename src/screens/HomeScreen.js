@@ -2,7 +2,11 @@ import React from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
 
 const HomeScreen = (props) => {
+
+
   return <View style={{ marginVertical: 100 }}>
+
+
     <Button title="Go To Components Screen"
       onPress={
         () => props.navigation.navigate('Comps')
@@ -38,6 +42,12 @@ const HomeScreen = (props) => {
     <Button title="Go To Square Screen"
       onPress={
         () => props.navigation.navigate('Square')
+      }
+    />
+
+    <Button title="Go To Input Screen"
+      onPress={
+        () => props.navigation.navigate('Input')
       }
     />
   </View>
